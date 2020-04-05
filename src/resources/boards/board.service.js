@@ -63,15 +63,16 @@ const putBoard = async (body, params) => {
 
 const deletBoard = async params => {
   const boards = await getAll();
+  if (typeof params !== 'string') {
+    return false;
+  }
   const boardForDelet = boards.find(item => item.id === params);
   const index = boards.indexOf(boardForDelet);
-  console.log(index);
   if (index < 0) {
-    return -1;
+    return 'not found';
   }
   const boardId = boardForDelet.id;
   dataTasks = dataTasks.filter(item => item.boardId !== boardId);
-  console.log(dataTasks);
   dataBoards.splice(index, 1);
   return index;
 };

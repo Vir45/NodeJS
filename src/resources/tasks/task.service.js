@@ -64,10 +64,10 @@ const putTask = async data => {
 
 const deleteTask = async data => {
   const tasks = await getAll();
-  // const validator = await taskValidator.deleteValidator(data);
-  // if (!validator) {
-  //   return false;
-  // }
+  const validator = await taskValidator.deleteValidator(data);
+  if (!validator) {
+    return false;
+  }
 
   const taskForDelet = tasks.find(item => item.id === data[1]);
   if (!taskForDelet) {

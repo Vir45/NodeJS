@@ -1,5 +1,8 @@
 # RS School REST service
 
+# Если есть вопросы (что-то не запукается и тд.), то пишите мне пожалуйста
+https://t.me/Vova_Serko
+
 ## Prerequisites
 
 - Git - [Download & Install Git](https://git-scm.com/downloads).

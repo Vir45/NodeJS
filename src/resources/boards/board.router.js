@@ -39,11 +39,16 @@ router.route('/:boardId').put(async (req, res) => {
 });
 
 router.route('/:boardId').delete(async (req, res) => {
-  const index = await boardService.deletBoard(req.params['boardId']);
-  if (index < 0) {
-    return res.status(404).send('Board not found');
+  const result = await boardService.deletBoard(req.params['boardId']);
+  res.setHeader('Content-Type', 'application/json');
+  if (result === false) {
+    return res.status(401).json('Access token is missing or invalid');
   }
-  return res.status(200).send('	The board has been deleted');
+  await res.setHeader('Content-Type', 'application/json');
+  if (result === 'not found') {
+    return await res.status(404).json('board not found');
+  }
+  return await res.status(200).json('The board has been deleted');
 });
 
 router.route('/:boardId/tasks').post(async (req, res) => {
@@ -59,10 +64,10 @@ router.route('/:boardId/tasks').post(async (req, res) => {
     columnId,
     boardId
   });
-  if (!result) {
-    return res.status(401).send('Access token is missing or invalid');
-  }
   res.setHeader('Content-Type', 'application/json');
+  if (!result) {
+    return res.status(401).json('Access token is missing or invalid');
+  }
   return res.status(200).json(result);
 });
 
@@ -108,16 +113,17 @@ router.route('/:boardId/tasks/:taskid').put(async (req, res) => {
 });
 
 router.route('/:boardId/tasks/:taskid').delete(async (req, res) => {
-  // if (!req.body) return res.sendStatus(404);
+  if (!req.body) return res.sendStatus(404);
   const parametrs = [req.params['boardId'], req.params.taskid];
   const result = await taskService.deleteTask(parametrs);
-  // if (result === false) {
-  //   return res.status(401).send('Access token is missing or invalid');
-  // }
   res.setHeader('Content-Type', 'application/json');
-  if (result === 'not found') {
-    return res.status(404).send('Task not found');
+  if (result === false) {
+    return res.status(401).json('Access token is missing or invalid');
   }
-  return res.status(204).send('The task has been deleted');
+  await res.setHeader('Content-Type', 'application/json');
+  if (result === 'not found') {
+    return await res.status(404).json('Task not found');
+  }
+  return await res.status(200).json('The task has been deleted');
 });
 module.exports = router;
