@@ -44,7 +44,6 @@ router.route('/:boardId').delete(async (req, res) => {
   if (result === false) {
     return res.status(401).json('Access token is missing or invalid');
   }
-  await res.setHeader('Content-Type', 'application/json');
   if (result === 'not found') {
     return await res.status(404).json('board not found');
   }
@@ -120,7 +119,6 @@ router.route('/:boardId/tasks/:taskid').delete(async (req, res) => {
   if (result === false) {
     return res.status(401).json('Access token is missing or invalid');
   }
-  await res.setHeader('Content-Type', 'application/json');
   if (result === 'not found') {
     return await res.status(404).json('Task not found');
   }
