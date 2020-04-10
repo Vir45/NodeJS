@@ -1,8 +1,8 @@
-const dataUsers = require('../data/data').dataUsers;
+const dataBoards = require('../data/data').dataBoards;
 
 const getAll = async () => {
   // TODO: mock implementation. should be replaced during task development
-  return dataUsers;
+  return dataBoards;
 };
 
 module.exports = { getAll };
