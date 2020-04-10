@@ -74,7 +74,7 @@ const deleteTask = async data => {
     return 'not found';
   }
   const index = tasks.indexOf(taskForDelet);
-  await dataTasks.splice(index, 1);
+  dataTasks.splice(index, 1);
   return true;
 };
 
