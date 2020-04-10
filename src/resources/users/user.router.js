@@ -1,10 +1,9 @@
 const router = require('express').Router();
 const User = require('./user.model');
 const usersService = require('./user.service');
-const loggerMiddware = require('../../middleware/userLoggerMiddleware');
 const { ErrorHandler, handleError } = require('../errorHandler/errorHandler');
 
-router.route('/').get(loggerMiddware, async (req, res, next) => {
+router.route('/').get(async (req, res, next) => {
   try {
     const users = await usersService.getAll();
     res.setHeader('Content-Type', 'application/json');
@@ -15,7 +14,9 @@ router.route('/').get(loggerMiddware, async (req, res, next) => {
   }
 });
 
-// router.route('/').get(loggerMiddware, async (req, res, next) => {
+// FOR TESTING unhandledRejection
+
+// router.route('/').get(async (req, res, next) => {
 //   // const users = await usersService.getAll();
 //   const users = await Promise.reject(new Error('Oopps'));
 //   res.setHeader('Content-Type', 'application/json');
@@ -23,7 +24,7 @@ router.route('/').get(loggerMiddware, async (req, res, next) => {
 //   next();
 // });
 
-router.route('/:userId').get(loggerMiddware, async (req, res, next) => {
+router.route('/:userId').get(async (req, res, next) => {
   try {
     const result = await usersService.getId(req.params['userId']);
     if (!result) {
@@ -40,7 +41,7 @@ router.route('/:userId').get(loggerMiddware, async (req, res, next) => {
   }
 });
 
-router.route('/').post(loggerMiddware, async (req, res, next) => {
+router.route('/').post(async (req, res, next) => {
   try {
     const result = await usersService.postUser(req.body);
     res.setHeader('Content-Type', 'application/json');
@@ -57,7 +58,7 @@ router.route('/').post(loggerMiddware, async (req, res, next) => {
   }
 });
 
-router.route('/:userId').put(loggerMiddware, async (req, res, next) => {
+router.route('/:userId').put(async (req, res, next) => {
   try {
     res.setHeader('Content-Type', 'application/json');
     const result = await usersService.putUser(req.body, req.params['userId']);
@@ -74,7 +75,7 @@ router.route('/:userId').put(loggerMiddware, async (req, res, next) => {
   }
 });
 
-router.route('/:userId').delete(loggerMiddware, async (req, res, next) => {
+router.route('/:userId').delete(async (req, res, next) => {
   try {
     const index = await usersService.deletUser(req.params['userId']);
     if (index < 0) {
