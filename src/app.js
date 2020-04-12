@@ -26,11 +26,6 @@ app.use(
 
 app.use('/', loggerMiddware, (req, res, next) => {
   if (req.originalUrl === '/') {
-    // logger.info(
-    //   `url: ${req.url}, body: ${JSON.stringify(
-    //     req.body
-    //   )}, params: ${JSON.stringify(req.params)}`
-    // );
     res.send('Service is running!');
     return;
   }

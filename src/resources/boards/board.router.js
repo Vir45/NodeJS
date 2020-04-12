@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const Board = require('./board.model');
 const boardService = require('./board.service');
-// const loggerMiddware = require('../../middleware/boardsLoggerMiddleware');
 const { ErrorHandler, handleError } = require('../errorHandler/errorHandler');
 
 const taskService = require('../tasks/task.service');
