@@ -21,7 +21,7 @@ router.route('/:boardId').get(async (req, res, next) => {
     if (result === false) {
       throw new ErrorHandler(401, 'Access token is missing or invalid');
     }
-    if (!result) {
+    if (result === 'not found') {
       throw new ErrorHandler(404, 'Board not found');
     }
     res.json(Board.toResponseBoard(result));
@@ -72,6 +72,7 @@ router.route('/:boardId').delete(async (req, res, next) => {
   try {
     const result = await boardService.deletBoard(req.params['boardId']);
     res.setHeader('Content-Type', 'application/json');
+    console.log(result);
     if (result === false) {
       throw new ErrorHandler(401, 'Access token is missing or invalid');
     }
@@ -80,6 +81,7 @@ router.route('/:boardId').delete(async (req, res, next) => {
     }
     return await res.status(200).json('The board has been deleted');
   } catch (err) {
+    console.log(err);
     if (err instanceof ErrorHandler) {
       return await handleError(err, res);
     }
@@ -136,6 +138,9 @@ router.route('/:boardId/tasks/:taskid').get(async (req, res, next) => {
   try {
     const parametrs = [req.params['boardId'], req.params.taskid];
     const result = await taskService.getTasksByBoardIdAndTaskId(parametrs);
+    if (result === 'not found') {
+      throw new ErrorHandler(404, 'Task not found');
+    }
     if (!result) {
       throw new ErrorHandler(401, 'Access token is missing or invalid');
     }
@@ -182,9 +187,8 @@ router.route('/:boardId/tasks/:taskid').delete(async (req, res, next) => {
     const parametrs = [req.params['boardId'], req.params.taskid];
     const result = await taskService.deleteTask(parametrs);
     res.setHeader('Content-Type', 'application/json');
-
-    if (result === 'not found') {
-      throw new ErrorHandler(404, 'Task not found');
+    if (result < 1) {
+      throw new ErrorHandler(404, 'User not found');
     }
     return await res.status(200).json('The task has been deleted');
   } catch (err) {

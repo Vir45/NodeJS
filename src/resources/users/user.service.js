@@ -1,16 +1,10 @@
-const usersRepo = require('./user.memory.repository');
-const dataUsers = require('../data/data').dataUsers;
-const dataTasks = require('../data/data').dataTasks;
-const User = require('./user.model');
+const userRepoDB = require('./user.db.repository');
+const taskRepoDB = require('../tasks/tasks.db.repository');
 
-const getAll = () => usersRepo.getAll();
+const getAll = () => userRepoDB.getAll();
 
 const getId = async params => {
-  const users = await getAll();
-  if (typeof params !== 'string') {
-    return false;
-  }
-  const result = await users.find(item => item.id === params);
+  const result = await userRepoDB.getById(params);
   return result;
 };
 
@@ -22,13 +16,11 @@ const postUser = async data => {
   ) {
     return false;
   }
-  const user = new User(data);
-  dataUsers.push(user);
+  const user = await userRepoDB.add(data);
   return user;
 };
 
 const putUser = async (body, params) => {
-  const users = await getAll();
   if (
     typeof body.name !== 'string' ||
     typeof body.login !== 'string' ||
@@ -36,25 +28,17 @@ const putUser = async (body, params) => {
   ) {
     return false;
   }
-  const userForPut = users.find(item => item.id === params);
-  const index = users.indexOf(userForPut);
-  if (index < 0) return false;
-  dataUsers.splice(index, 1, { ...body, ...{ id: params } });
-  return { ...body, ...{ id: params } };
+  await userRepoDB.put(body, params);
+  const result = await userRepoDB.getById(params);
+  return result;
 };
 
 const deletUser = async params => {
-  const users = await getAll();
-  const userForDelet = users.find(item => item.id === params);
-  const index = users.indexOf(userForDelet);
-  if (index < 0) {
+  await taskRepoDB.getNull(params);
+  const index = await userRepoDB.delet(params);
+  if (index < 1) {
     return -1;
   }
-  const userId = userForDelet.id;
-  dataTasks.forEach(item => {
-    if (item.userId === userId) item.userId = null;
-  });
-  dataUsers.splice(index, 1);
   return index;
 };
 

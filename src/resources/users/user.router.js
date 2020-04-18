@@ -14,16 +14,6 @@ router.route('/').get(async (req, res, next) => {
   }
 });
 
-// FOR TESTING unhandledRejection
-
-// router.route('/').get(async (req, res, next) => {
-//   // const users = await usersService.getAll();
-//   const users = await Promise.reject(new Error('Oopps'));
-//   res.setHeader('Content-Type', 'application/json');
-//   res.json(users.map(User.toResponse));
-//   next();
-// });
-
 router.route('/:userId').get(async (req, res, next) => {
   try {
     const result = await usersService.getId(req.params['userId']);
