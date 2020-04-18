@@ -72,16 +72,14 @@ router.route('/:boardId').delete(async (req, res, next) => {
   try {
     const result = await boardService.deletBoard(req.params['boardId']);
     res.setHeader('Content-Type', 'application/json');
-    console.log(result);
     if (result === false) {
       throw new ErrorHandler(401, 'Access token is missing or invalid');
     }
-    if (result === 'not found') {
-      throw new ErrorHandler(404, 'Board not found');
-    }
+    // if (result === 'not found') {
+    //   throw new ErrorHandler(404, 'Board not found');
+    // }
     return await res.status(200).json('The board has been deleted');
   } catch (err) {
-    console.log(err);
     if (err instanceof ErrorHandler) {
       return await handleError(err, res);
     }
