@@ -75,9 +75,7 @@ router.route('/:boardId').delete(async (req, res, next) => {
     if (result === false) {
       throw new ErrorHandler(401, 'Access token is missing or invalid');
     }
-    // if (result === 'not found') {
-    //   throw new ErrorHandler(404, 'Board not found');
-    // }
+
     return await res.status(200).json('The board has been deleted');
   } catch (err) {
     if (err instanceof ErrorHandler) {
