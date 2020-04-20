@@ -1,18 +1,16 @@
-const boardRepo = require('./board.memory.repository');
-const dataBoards = require('../data/data').dataBoards;
-const Board = require('./board.model');
-let dataColumns = require('../data/data').dataColumns;
-let dataTasks = require('../data/data').dataTasks;
-const boardValidator = require('./board.validator');
+const boardRepoDB = require('./board.db.repository');
+const taskRepoDB = require('../tasks/tasks.db.repository');
 
-const getAll = () => boardRepo.getAll();
+const getAll = () => boardRepoDB.getAll();
 
 const getId = async params => {
   if (typeof params !== 'string') {
     return false;
   }
-  const boards = await getAll();
-  const result = boards.find(item => item.id === params);
+  const result = await boardRepoDB.getById(params);
+  if (result === null) {
+    return 'not found';
+  }
   return result;
 };
 
@@ -20,60 +18,24 @@ const postBoard = async data => {
   if (typeof data.title !== 'string' || !Array.isArray(data.columns)) {
     return false;
   }
-  const board = new Board(data);
-  dataBoards.push(board);
-  const { columns } = board;
-  dataColumns = [...dataColumns, ...columns];
+  const board = await boardRepoDB.add(data);
   return board;
 };
 
 const putBoard = async (body, params) => {
-  const validator = await boardValidator.putValidator(body);
-  if (!validator) {
-    return false;
-  }
-  const boards = await getAll();
-  const boardForPut = boards.find(item => item.id === params);
-  const index = boards.indexOf(boardForPut);
-  if (index < 0) return false;
-  let { columns } = body;
-  const { title } = body;
-  const id = params;
-  const lastColumns = boardForPut.columns;
-
-  const chek = lastColumns.map(item => {
-    const result = columns.findIndex(elem => elem.id === item.id);
-    return result;
-  });
-
-  const columnsWithotChanges = [...columns];
-
-  for (let i = 0; i < chek.length; i++) {
-    if (chek[i] > -1) {
-      lastColumns.splice(i, 1, columnsWithotChanges[chek[i]]);
-      columns = columns.filter(item => item !== columnsWithotChanges[chek[i]]);
-    }
-  }
-  const newColumns = [...lastColumns, ...columns];
-  columns = [...newColumns];
-  const newBoards = new Board({ id, title, columns });
-  dataBoards.splice(index, 1, newBoards);
-  return newBoards;
+  await boardRepoDB.put(body, params);
+  return await boardRepoDB.getById(params);
 };
 
 const deletBoard = async params => {
-  const boards = await getAll();
   if (typeof params !== 'string') {
     return false;
   }
-  const boardForDelet = boards.find(item => item.id === params);
-  const index = boards.indexOf(boardForDelet);
-  if (index < 0) {
+  await taskRepoDB.deletForBoards(params);
+  const index = await boardRepoDB.delet(params);
+  if (index < 1) {
     return 'not found';
   }
-  const boardId = boardForDelet.id;
-  dataTasks = dataTasks.filter(item => item.boardId !== boardId);
-  dataBoards.splice(index, 1);
   return index;
 };
 

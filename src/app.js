@@ -1,17 +1,13 @@
 const express = require('express');
 const swaggerUI = require('swagger-ui-express');
 const path = require('path');
-const fs = require('fs');
 const YAML = require('yamljs');
 const userRouter = require('./resources/users/user.router');
 const boardRouter = require('./resources/boards/board.router');
-const taskRouter = require('./resources/tasks/task.router');
-const logger = require('./logger/logger');
 const docLoggerMiddware = require('./middleware/docLoggerMiddleware');
 const errorLoggMiddware = require('./middleware/errorLoggMiddleware');
 const { handleError } = require('./resources/errorHandler/errorHandler');
 const loggerMiddware = require('./middleware/loggerMiddleware');
-
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
 
@@ -26,11 +22,6 @@ app.use(
 
 app.use('/', loggerMiddware, (req, res, next) => {
   if (req.originalUrl === '/') {
-    // logger.info(
-    //   `url: ${req.url}, body: ${JSON.stringify(
-    //     req.body
-    //   )}, params: ${JSON.stringify(req.params)}`
-    // );
     res.send('Service is running!');
     return;
   }
@@ -39,19 +30,6 @@ app.use('/', loggerMiddware, (req, res, next) => {
 
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
-app.use('/tasks', taskRouter);
-
-process.on('unhandledRejection', (reason, promise) => {
-  logger.error(reason.stack);
-  console.error(`Unhandled rejection detected: ${reason.message} ${promise}`);
-});
-
-process.on('uncaughtException', error => {
-  console.error(`captured error: ${error.message}`);
-  const pathForErrorLogger = path.resolve('src', 'logger', 'error.log');
-  fs.writeFileSync(pathForErrorLogger, error.stack);
-  process.exit(1);
-});
 
 app.use((err, req, res, next) => {
   handleError(err, res);

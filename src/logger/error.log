@@ -1,33 +1,643 @@
-2020-04-10 17:04:00 error [server.js]: Error: Internal Server Error
-    at router.route.get (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:40:10)
-    at Layer.handle [as handle_request] (D:\RS\node_course\NodeJS\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\RS\node_course\NodeJS\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\RS\node_course\NodeJS\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\RS\node_course\NodeJS\node_modules\express\lib\router\layer.js:95:5)
-    at D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:281:22
-    at param (D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:354:14)
-    at param (D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:410:3)
-    at next (D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:275:10)
-2020-04-10 17:04:08 error [server.js]: Error: Internal Server Error
-    at router.route.get (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:40:10)
-    at Layer.handle [as handle_request] (D:\RS\node_course\NodeJS\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\RS\node_course\NodeJS\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\RS\node_course\NodeJS\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\RS\node_course\NodeJS\node_modules\express\lib\router\layer.js:95:5)
-    at D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:281:22
-    at param (D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:354:14)
-    at param (D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:410:3)
-    at next (D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:275:10)
-2020-04-10 17:04:28 error [server.js]: Error: Internal Server Error
-    at router.route.get (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:40:10)
-    at Layer.handle [as handle_request] (D:\RS\node_course\NodeJS\node_modules\express\lib\router\layer.js:95:5)
-    at next (D:\RS\node_course\NodeJS\node_modules\express\lib\router\route.js:137:13)
-    at Route.dispatch (D:\RS\node_course\NodeJS\node_modules\express\lib\router\route.js:112:3)
-    at Layer.handle [as handle_request] (D:\RS\node_course\NodeJS\node_modules\express\lib\router\layer.js:95:5)
-    at D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:281:22
-    at param (D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:354:14)
-    at param (D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:365:14)
-    at Function.process_params (D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:410:3)
-    at next (D:\RS\node_course\NodeJS\node_modules\express\lib\router\index.js:275:10)
+2020-04-14 23:00:19 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:12:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-15 20:10:52 error [server.js]: MongoError: user is not allowed to do action [dropDatabase] on [rest.]
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at TLSSocket.Readable.push (_stream_readable.js:224:10)
+    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+2020-04-15 20:12:49 error [server.js]: MongoError: user is not allowed to do action [dropDatabase] on [rest.]
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at TLSSocket.Readable.push (_stream_readable.js:224:10)
+    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+2020-04-15 20:13:02 error [server.js]: MongoError: user is not allowed to do action [dropDatabase] on [rest.]
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at TLSSocket.Readable.push (_stream_readable.js:224:10)
+    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+2020-04-15 20:36:47 error [server.js]: MongoError: user is not allowed to do action [dropDatabase] on [test.]
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at TLSSocket.Readable.push (_stream_readable.js:224:10)
+    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+2020-04-15 20:37:18 error [server.js]: MongoError: user is not allowed to do action [dropDatabase] on [rest.]
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at TLSSocket.Readable.push (_stream_readable.js:224:10)
+    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+2020-04-15 20:40:12 error [server.js]: MongoError: user is not allowed to do action [dropDatabase] on [rest.]
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at TLSSocket.Readable.push (_stream_readable.js:224:10)
+    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+2020-04-15 20:40:36 error [server.js]: MongoError: user is not allowed to do action [dropDatabase] on [rest.]
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at TLSSocket.Readable.push (_stream_readable.js:224:10)
+    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+2020-04-15 20:40:42 error [server.js]: MongoError: user is not allowed to do action [dropDatabase] on [rest.]
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at TLSSocket.Readable.push (_stream_readable.js:224:10)
+    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+2020-04-15 20:43:34 error [server.js]: MongoError: user is not allowed to do action [dropDatabase] on [rest.]
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at TLSSocket.Readable.push (_stream_readable.js:224:10)
+    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+2020-04-15 20:44:49 error [server.js]: MongoError: user is not allowed to do action [dropDatabase] on [rest.]
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11)
+    at TLSSocket.Readable.push (_stream_readable.js:224:10)
+    at TLSWrap.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+2020-04-15 20:52:19 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:12:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-15 20:58:21 error [server.js]: MongoError: Cannot create collection rest.users - database is in the process of being dropped.
+    at Function.create (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:43:12)
+    at toError (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:265:39)
+    at handler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:913:24)
+    at fn (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:352:13)
+    at handleOperationResult (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:487:5)
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:270:5)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+2020-04-15 21:14:52 error [server.js]: Error: Internal Server Error
+    at router.route.post (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:56:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-15 23:25:53 error [server.js]: SyntaxError: Unexpected token ] in JSON at position 144
+    at JSON.parse (<anonymous>)
+    at parse (D:\RS\node_course\NodeJS\node_modules\body-parser\lib\types\json.js:89:19)
+    at D:\RS\node_course\NodeJS\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (D:\RS\node_course\NodeJS\node_modules\raw-body\index.js:224:16)
+    at done (D:\RS\node_course\NodeJS\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (D:\RS\node_course\NodeJS\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:203:15)
+    at endReadableNT (_stream_readable.js:1145:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+2020-04-16 19:04:55 error [server.js]: MongoError: Cannot create collection rest.users - database is in the process of being dropped.
+    at Function.create (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:43:12)
+    at toError (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:265:39)
+    at handler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:913:24)
+    at fn (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:352:13)
+    at handleOperationResult (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:487:5)
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:270:5)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+2020-04-16 19:05:14 error [server.js]: MongoError: Cannot create collection rest.users - database is in the process of being dropped.
+    at Function.create (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:43:12)
+    at toError (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:265:39)
+    at handler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:913:24)
+    at fn (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:352:13)
+    at handleOperationResult (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:487:5)
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:270:5)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+2020-04-16 19:11:24 error [server.js]: MongoError: Cannot create collection rest.users - database is in the process of being dropped.
+    at Function.create (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:43:12)
+    at toError (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:265:39)
+    at handler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:913:24)
+    at fn (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:352:13)
+    at handleOperationResult (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:487:5)
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:270:5)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+2020-04-16 19:15:52 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:13:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 19:24:00 error [server.js]: MongoError: Cannot create collection rest.users - database is in the process of being dropped.
+    at Function.create (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:43:12)
+    at toError (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:265:39)
+    at handler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:913:24)
+    at fn (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:352:13)
+    at handleOperationResult (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:487:5)
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:270:5)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+2020-04-16 19:24:00 error [server.js]: MongoError: Cannot create collection rest.users - database is in the process of being dropped.
+    at Function.create (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:43:12)
+    at toError (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:265:39)
+    at handler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:913:24)
+    at fn (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:352:13)
+    at handleOperationResult (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:487:5)
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:270:5)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+2020-04-16 20:03:59 error [server.js]: MongoError: Cannot create collection rest.users - database is in the process of being dropped.
+    at Function.create (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\error.js:43:12)
+    at toError (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\utils.js:149:22)
+    at coll.s.topology.insert (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\operations\common_functions.js:265:39)
+    at handler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\topology.js:913:24)
+    at fn (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:352:13)
+    at handleOperationResult (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\core\sdam\server.js:487:5)
+    at MessageStream.messageHandler (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:270:5)
+    at MessageStream.emit (events.js:198:13)
+    at processIncomingData (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (D:\RS\node_course\NodeJS\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at doWrite (_stream_writable.js:415:12)
+    at writeOrBuffer (_stream_writable.js:399:5)
+    at MessageStream.Writable.write (_stream_writable.js:299:11)
+    at TLSSocket.ondata (_stream_readable.js:709:20)
+    at TLSSocket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+2020-04-16 20:16:38 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:32:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:18:52 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:32:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:49:32 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:67:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:50:19 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:67:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:51:43 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:68:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:52:04 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:68:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:52:27 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:68:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:52:57 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:68:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:53:55 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:67:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:54:07 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:67:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:55:57 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:67:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:56:53 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:67:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:58:12 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:58:33 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:59:29 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 20:59:41 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:00:32 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:01:14 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:04:32 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:04:45 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:06:03 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:06:34 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:10:12 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:10:37 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:14:20 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:14:43 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:14:55 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:14:55 error [server.js]: CastError: Cast to ObjectId failed for value "d974b448-e654-487d-8e05-880647e97195" at path "_id" for model "Board"
+    at new CastError (D:\RS\node_course\NodeJS\node_modules\mongoose\lib\error\cast.js:29:11)
+    at model.Query.exec (D:\RS\node_course\NodeJS\node_modules\mongoose\lib\query.js:4340:21)
+    at model.Query.Query.then (D:\RS\node_course\NodeJS\node_modules\mongoose\lib\query.js:4432:15)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:15:39 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:17:03 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:17:24 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:17:48 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-16 21:17:57 error [server.js]: Error: Internal Server Error
+    at router.route.put (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:66:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:14:18 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:15:55 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:17:34 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:18:38 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:39:58 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:194:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:39:58 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:194:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:40:10 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:42:04 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:42:48 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:43:40 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:44:37 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:48:00 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:49:31 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:49:48 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:50:15 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:52:31 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 21:56:23 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:00:13 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:05:51 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:20:04 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:20:04 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:20:04 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:20:04 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:20:04 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:20:04 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:22:56 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:22:56 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:22:57 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:22:57 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:22:57 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:22:57 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:24:42 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:24:42 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:24:42 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:24:42 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:24:43 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:24:43 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:25:21 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:25:21 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:25:22 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:25:22 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:25:22 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:25:22 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:26:31 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:26:46 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:26:46 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:26:46 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:26:46 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:26:46 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:26:46 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:27:09 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:28:27 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:28:27 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:28:27 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:28:27 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:28:27 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:28:27 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:28:52 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:28:52 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:28:52 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:28:52 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:28:52 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:28:53 error [server.js]: Error: Internal Server Error
+    at router.route.delete (D:\RS\node_course\NodeJS\src\resources\users\user.router.js:79:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:29:05 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:30:57 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:35:42 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:35:42 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:35:42 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:35:42 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:35:42 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:35:42 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:41:31 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:41:32 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:41:32 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:41:32 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:41:32 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:41:32 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-17 22:42:27 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-18 10:33:51 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-18 10:34:48 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-18 10:35:29 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-18 10:36:39 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:147:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-18 10:37:09 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:148:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-18 10:37:31 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:148:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-18 10:39:07 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:148:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-18 10:39:47 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:148:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+2020-04-18 10:42:13 error [server.js]: Error: Internal Server Error
+    at router.route.get (D:\RS\node_course\NodeJS\src\resources\boards\board.router.js:148:10)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
