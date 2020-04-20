@@ -10015,3 +10015,70 @@
 {"time":"2020-04-19 21:25:52","level":"info","message":"url: /boards/58d6be17-c914-4e51-b641-2c5ae5131b2d/tasks/33986a9a-ce12-4945-b37c-d6d9edd948b4, body: {}, params: {}"}
 {"time":"2020-04-19 21:25:52","level":"info","message":"url: /boards/58d6be17-c914-4e51-b641-2c5ae5131b2d/tasks/17d7e0f6-254b-4a2a-a98f-2c8fdf8d3e4d, body: {}, params: {}"}
 {"time":"2020-04-19 21:25:52","level":"info","message":"url: /boards/58d6be17-c914-4e51-b641-2c5ae5131b2d, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /users, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards, body: {\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards, body: {\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /users, body: {\"name\":\"TEST_USER\",\"login\":\"test_user\",\"password\":\"T35t_P@55w0rd\"}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e/tasks, body: {\"title\":\"Autotest task\",\"order\":0,\"description\":\"Lorem ipsum\",\"userId\":null,\"boardId\":null,\"columnId\":null}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /users/71143dba-e805-4fff-8dcc-317cd0126960, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e/tasks, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /users/71143dba-e805-4fff-8dcc-317cd0126960, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e/tasks, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e/tasks/4f565db7-3b5c-4e0e-b5ec-355440481155, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards, body: {\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e/tasks, body: {\"title\":\"Autotest task\",\"order\":0,\"description\":\"Lorem ipsum\",\"userId\":null,\"boardId\":null,\"columnId\":null}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /users, body: {\"name\":\"TEST_USER\",\"login\":\"test_user\",\"password\":\"T35t_P@55w0rd\"}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/91b925db-34ba-4b43-9077-05fc500e034d, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e/tasks/29dd6ae8-5ca5-4e00-bc94-af5cd1c49487, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /users/4e4069fc-9215-4aaf-a808-cf1f51a8f07b, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e/tasks, body: {\"title\":\"Autotest task\",\"order\":0,\"description\":\"Lorem ipsum\",\"userId\":null,\"boardId\":null,\"columnId\":null}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards, body: {\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e/tasks/3196fd48-1962-4021-b0a6-951d4ae20a4a, body: {\"id\":\"3196fd48-1962-4021-b0a6-951d4ae20a4a\",\"title\":\"Autotest updated task\",\"order\":0,\"description\":\"Lorem ipsum\",\"boardId\":\"67a411d0-0443-4e63-9e83-7b342e8b4d4e\",\"columnId\":null,\"userId\":null}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/8b23fbdd-0a1a-48d5-92ae-912e5d5c4fb1, body: {\"id\":\"8b23fbdd-0a1a-48d5-92ae-912e5d5c4fb1\",\"title\":\"Autotest updated board\",\"columns\":[{\"_id\":\"5e9c97fbfdf0e800ec575a40\",\"title\":\"Backlog\",\"order\":1,\"id\":\"b0c8b09b-0543-4937-9869-b1589febb6aa\"},{\"_id\":\"5e9c97fbfdf0e800ec575a41\",\"title\":\"Sprint\",\"order\":2,\"id\":\"9769a033-0c72-429a-8f46-83966afd43ea\"}]}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /users, body: {\"name\":\"TEST_USER\",\"login\":\"test_user\",\"password\":\"T35t_P@55w0rd\"}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e/tasks/3196fd48-1962-4021-b0a6-951d4ae20a4a, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /users/d0073080-959b-49f9-922c-5ad5ebcbd4dd, body: {\"name\":\"Autotest updated TEST_USER\",\"login\":\"test_user\",\"password\":\"T35t_P@55w0rd\",\"id\":\"d0073080-959b-49f9-922c-5ad5ebcbd4dd\"}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e/tasks/4f565db7-3b5c-4e0e-b5ec-355440481155, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/8b23fbdd-0a1a-48d5-92ae-912e5d5c4fb1, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e/tasks/4f565db7-3b5c-4e0e-b5ec-355440481155, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/8b23fbdd-0a1a-48d5-92ae-912e5d5c4fb1, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /users/d0073080-959b-49f9-922c-5ad5ebcbd4dd, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e/tasks/4f565db7-3b5c-4e0e-b5ec-355440481155, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /users/d0073080-959b-49f9-922c-5ad5ebcbd4dd, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/67a411d0-0443-4e63-9e83-7b342e8b4d4e, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards, body: {\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/ccd552dc-b1de-4bcb-94d1-df5af201340e, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /users, body: {\"name\":\"TEST_USER\",\"login\":\"test_user\",\"password\":\"T35t_P@55w0rd\"}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /users/32f1c4d8-b221-4cc1-b0c0-e23f8e99ee91, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards/ccd552dc-b1de-4bcb-94d1-df5af201340e, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:07","level":"info","message":"url: /boards, body: {\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /users, body: {\"name\":\"TEST_USER\",\"login\":\"test_user\",\"password\":\"T35t_P@55w0rd\"}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks, body: {\"title\":\"Task #1\",\"order\":1,\"description\":\"Lorem ipsum\",\"boardId\":\"3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb\",\"userId\":null,\"columnId\":null}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks, body: {\"title\":\"Task #2\",\"order\":2,\"description\":\"Lorem ipsum\",\"boardId\":\"3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb\",\"userId\":null,\"columnId\":null}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks, body: {\"title\":\"Task #3\",\"order\":3,\"description\":\"Lorem ipsum\",\"boardId\":\"3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb\",\"userId\":null,\"columnId\":null}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks, body: {\"title\":\"Task #4\",\"order\":4,\"description\":\"Lorem ipsum\",\"boardId\":\"3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb\",\"userId\":null,\"columnId\":null}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks, body: {\"title\":\"Task #5\",\"order\":5,\"description\":\"Lorem ipsum\",\"boardId\":\"3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb\",\"userId\":null,\"columnId\":null}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards, body: {\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks/506e24a2-7fc4-4bae-8261-cfdf2efc2f4b, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks/90a59502-cf38-4d05-a7d2-1467a25be80d, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks/732f5fa4-e6e3-4633-956d-5f78a887a41f, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks/b79b8be9-1a64-4f2d-a9ca-6f246441d0d1, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks/2af19d06-9912-490e-82a2-7bbb897f4fbc, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/41e6eb56-fb89-4b2e-bc69-07a3eb6cfdd7/tasks, body: {\"title\":\"Task #1\",\"order\":1,\"description\":\"Lorem ipsum\",\"userId\":\"8b225fdd-a8b3-4d3f-87a3-30fb33c77627\",\"boardId\":\"41e6eb56-fb89-4b2e-bc69-07a3eb6cfdd7\"}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/41e6eb56-fb89-4b2e-bc69-07a3eb6cfdd7/tasks, body: {\"title\":\"Task #2\",\"order\":2,\"description\":\"Lorem ipsum\",\"userId\":\"8b225fdd-a8b3-4d3f-87a3-30fb33c77627\",\"boardId\":\"41e6eb56-fb89-4b2e-bc69-07a3eb6cfdd7\"}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /users/8b225fdd-a8b3-4d3f-87a3-30fb33c77627, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks/506e24a2-7fc4-4bae-8261-cfdf2efc2f4b, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks/90a59502-cf38-4d05-a7d2-1467a25be80d, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks/732f5fa4-e6e3-4633-956d-5f78a887a41f, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks/b79b8be9-1a64-4f2d-a9ca-6f246441d0d1, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/3750d1cc-f765-46d7-9b96-ce4eb8ae5dfb/tasks/2af19d06-9912-490e-82a2-7bbb897f4fbc, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/b1b060c1-8a08-475d-8b58-afada910371b, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/41e6eb56-fb89-4b2e-bc69-07a3eb6cfdd7/tasks/7f748974-d136-4f64-a81e-da13354e89da, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/41e6eb56-fb89-4b2e-bc69-07a3eb6cfdd7/tasks/ae3c9731-e48c-40c8-8d65-921a7fe5394a, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/41e6eb56-fb89-4b2e-bc69-07a3eb6cfdd7/tasks/7f748974-d136-4f64-a81e-da13354e89da, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/41e6eb56-fb89-4b2e-bc69-07a3eb6cfdd7/tasks/ae3c9731-e48c-40c8-8d65-921a7fe5394a, body: {}, params: {}"}
+{"time":"2020-04-19 21:27:08","level":"info","message":"url: /boards/41e6eb56-fb89-4b2e-bc69-07a3eb6cfdd7, body: {}, params: {}"}
