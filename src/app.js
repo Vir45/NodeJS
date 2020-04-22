@@ -4,12 +4,14 @@ const path = require('path');
 const YAML = require('yamljs');
 const userRouter = require('./resources/users/user.router');
 const boardRouter = require('./resources/boards/board.router');
+const loginRouter = require('./resources/login/login.router');
 const docLoggerMiddware = require('./middleware/docLoggerMiddleware');
 const errorLoggMiddware = require('./middleware/errorLoggMiddleware');
 const { handleError } = require('./resources/errorHandler/errorHandler');
 const loggerMiddware = require('./middleware/loggerMiddleware');
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
+const authenticateJWT = require('./middleware/authenticateJWT');
 
 app.use(express.json());
 
@@ -28,8 +30,9 @@ app.use('/', loggerMiddware, (req, res, next) => {
   next();
 });
 
-app.use('/users', userRouter);
-app.use('/boards', boardRouter);
+app.use('/users', authenticateJWT, userRouter);
+app.use('/boards', authenticateJWT, boardRouter);
+app.use('/login', loginRouter);
 
 app.use((err, req, res, next) => {
   handleError(err, res);

@@ -20,4 +20,8 @@ const delet = async params => {
   return (await User.deleteOne({ _id: params })).deletedCount;
 };
 
-module.exports = { getAll, add, getById, put, delet };
+const getUserForaAthentication = async userLogin => {
+  return User.findOne({ login: userLogin });
+};
+
+module.exports = { getAll, add, getById, put, delet, getUserForaAthentication };
