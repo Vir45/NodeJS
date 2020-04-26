@@ -1,5 +1,6 @@
 const userRepoDB = require('./user.db.repository');
 const taskRepoDB = require('../tasks/tasks.db.repository');
+const bcrypt = require('bcrypt');
 
 const getAll = () => userRepoDB.getAll();
 
@@ -16,7 +17,11 @@ const postUser = async data => {
   ) {
     return false;
   }
-  const user = await userRepoDB.add(data);
+  let { password } = data;
+  const { name, login } = data;
+  const hash = await bcrypt.hash(password, 10);
+  password = hash;
+  const user = await userRepoDB.add({ password, name, login });
   return user;
 };
 
