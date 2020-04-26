@@ -27,7 +27,6 @@ const connectToDB = cb => {
     console.log('MONgose start');
     createUser(user);
     db.dropDatabase();
-
     cb();
   });
 };
